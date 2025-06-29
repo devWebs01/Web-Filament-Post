@@ -3,7 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\CategoryResource\Pages;
-use App\Filament\Resources\PostRelationManagerResource\RelationManagers\PostRelationManager;
+use App\Filament\Resources\PostResource\RelationManagers\PostRelationManager;
 use App\Models\Category;
 use Filament\Forms\Components\Card;
 use Filament\Forms\Components\Textarea;

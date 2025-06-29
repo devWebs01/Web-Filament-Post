@@ -2,8 +2,8 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\PostRelationManagerResource\RelationManagers\CategoryRelationManager;
 use App\Filament\Resources\PostResource\Pages;
+use App\Filament\Resources\PostResource\RelationManagers\CategoryRelationManager;
 use App\Models\Post;
 use Filament\Forms\Components\Card;
 use Filament\Forms\Components\FileUpload;

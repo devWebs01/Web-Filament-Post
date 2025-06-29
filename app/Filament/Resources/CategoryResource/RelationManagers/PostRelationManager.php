@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Resources\PostRelationManagerResource\RelationManagers;
+namespace App\Filament\Resources\PostResource\RelationManagers;
 
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Select;
