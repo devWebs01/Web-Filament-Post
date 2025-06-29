@@ -18,6 +18,13 @@ class CategoryResource extends Resource
 {
     protected static ?string $model = Category::class;
 
+    protected static ?string $recordTitleAttribute = 'name';
+
+    public static function getGloballySearchableAttributes(): array
+    {
+        return ['name', 'desc', 'posts.title'];
+    }
+
     protected static ?string $navigationLabel = 'Kategori';
 
     protected static ?string $navigationIcon = 'heroicon-o-tag';

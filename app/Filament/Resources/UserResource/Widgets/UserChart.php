@@ -3,8 +3,8 @@
 namespace App\Filament\Resources\UserResource\Widgets;
 
 use App\Models\User;
-use Flowframe\Trend\Trend;
 use Filament\Widgets\ChartWidget;
+use Flowframe\Trend\Trend;
 use Flowframe\Trend\TrendValue;
 
 class UserChart extends ChartWidget
@@ -33,10 +33,10 @@ class UserChart extends ChartWidget
             'datasets' => [
                 [
                     'label' => 'User Terdaftar',
-                    'data' => $data->map(fn(TrendValue $value) => $value->aggregate),
+                    'data' => $data->map(fn (TrendValue $value) => $value->aggregate),
                 ],
             ],
-            'labels' => $data->map(fn(TrendValue $value) => $value->date),
+            'labels' => $data->map(fn (TrendValue $value) => $value->date),
         ];
     }
 

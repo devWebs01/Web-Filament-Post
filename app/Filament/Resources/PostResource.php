@@ -21,6 +21,13 @@ class PostResource extends Resource
 {
     protected static ?string $model = Post::class;
 
+    protected static ?string $recordTitleAttribute = 'title';
+
+    public static function getGloballySearchableAttributes(): array
+    {
+        return ['title', 'status', 'category.name'];
+    }
+
     protected static ?string $navigationIcon = 'heroicon-o-newspaper';
 
     protected static ?string $modelLabel = 'Artikel';

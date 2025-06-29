@@ -16,6 +16,13 @@ class UserResource extends Resource
 {
     protected static bool $shouldRegisterNavigation = true;
 
+    protected static ?string $recordTitleAttribute = 'name';
+
+    public static function getGloballySearchableAttributes(): array
+    {
+        return ['name', 'email'];
+    }
+
     protected static ?string $model = User::class;
 
     protected static ?string $modelLabel = 'Pengguna';
